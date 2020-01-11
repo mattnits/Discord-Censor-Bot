@@ -1,4 +1,4 @@
-const TOKEN = "NjY1Njg1OTY5OTExMTUyNjgx.XhpPMA.8VsW8D2I3V2k1GZWNU7OoeEgcFk"
+const TOKEN = "########" //HIDDEN FOR SECURITY PURPOSES
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
@@ -13,8 +13,8 @@ client.on('ready', () => {
         })
     })*/
 
-    let generalChannel = client.channels.get("655552428569002009");
-    let wow = client.channels.get("615641028061560842")
+    let generalChannel = client.channels.get("###");//HIDDEN FOR SECURITY PURPOSES
+    let wow = client.channels.get("###");//HIDDEN FOR SECURITY PURPOSES
 
     generalChannel.members.forEach(member => console.log(member.user.id + " Name: " + member.user.username));
     
@@ -36,7 +36,7 @@ client.on('message', (recievedMessage) => {
         recievedMessage.delete();
     }
 
-    if (userid == "367485671650230273") {
+    if (userid == "###") {
         recievedMessage.channel.send("Welcome back!");
     }
 
